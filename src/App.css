@@ -4,44 +4,56 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(176deg, rgb(18, 24, 27) 50%, rgb(32, 39, 55) 100%)
     fixed;
 }
 
 .navbar {
-  width: 100vw;
-  height: 5em;
+  height: 70px;
   display: flex;
   align-items: center;
 }
 
-.url-input::placeholder {
-  opacity: 1;
-  color: #cad6d8;
-  font-weight: bold;
-}
-.navbar-content{
-  box-sizing: border-box;
+.navbar-content {
+  width: 460px;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .url-input,
 .submit-btn {
-  box-sizing: border-box;
-  border: 1px white solid;
   margin-left: 10px;
-  height: 3em;
-  color: white;
+  height: 40px;
   outline: none;
+  box-sizing: border-box;
+}
+.url-input {
+  border: 1px black solid;
+  padding: 20px;
+  width: 350px;
+  background: #474444;
+}
+.url-input::placeholder {
+  opacity: 1;
+  color: #fff;
+  font-weight: bold;
 }
 
 .submit-btn {
-  box-sizing: border-box;
   text-align: center;
-  height: 44px;
-  padding: 15px;
+  padding: 5px 10px;
+  color: #021013;
+  background: #bcc2e0;
+  transition: all 200ms ease-in-out;
+  border: none;
 }
-
-.url-input {
-  width: 350px;
-  padding: 22px;
+.submit-btn:hover {
+  color: white;
+  background: rgb(50, 97, 100);
 }
