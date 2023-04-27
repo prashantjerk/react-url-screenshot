@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Website Screenshot Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project
 
-## Available Scripts
+allows users to generate a screenshot of any website by entering the website URL. The screenshot is generated using the Apiflash API and the full-page screenshot is displayed on the webpage.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+    * React
+    * Apiflash API
+    * JavaScript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    Users can enter the URL of any website
+    Full-page screenshot of the website is generated and displayed
+    Users can click on the screenshot to open the website in a new tab
 
-### `npm test`
+## Installation and Usage
+```
+    1. Clone the repository
+    2. Navigate to the project directory
+    3. Run `npm install` to install the dependencies
+    4. Create a `.env` file in the root directory and add your Apiflash API key in the following format: `REACT_APP_API_KEY=YOUR_API_KEY`
+    5. Run `npm start` to start the development server
+```
+## Documentation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this project, we learned how to use an API to generate a screenshot of a website by passing in a URL. We utilized the Apiflash API and passed in the required parameters to get a full-page screenshot of the website.
 
-### `npm run build`
+We also learned how to change the state of a React component using the `useState` hook. We used this hook to store the URL entered by the user and also to store the generated image URL from the API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We made use of the `async` and `await` keywords to make asynchronous API calls and to ensure that the response is resolved before we proceed to the next step in our code.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We used the `fetch` function to make `HTTP requests` to the Apiflash API and we used the `blob` method to retrieve the binary data from the response. We then used the `URL.createObjectURL()` method to create a URL for the binary data, which we used to display the image on the webpage.
