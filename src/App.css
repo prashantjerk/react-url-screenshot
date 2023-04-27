@@ -38,6 +38,7 @@
   padding: 20px;
   width: 350px;
   background: #474444;
+  color: #fff;
 }
 .url-input::placeholder {
   opacity: 1;
@@ -57,3 +58,4 @@
   color: white;
   background: rgb(50, 97, 100);
 }
+
